@@ -9,3 +9,11 @@ if (program === 'deno') {
 else {
     console.log('👉🏻 upgrade yourself ');
 }
+
+setTimeout(() =>{
+    console.log('Hello, deno')
+    console.table(Deno.metrics());
+}, 1000);
+
+// Prints the metrics between javascript and rust
+//console.table(Deno.metrics());
